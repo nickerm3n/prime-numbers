@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+:root {
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+/* 	transition: all .3s ease-in-out; */
+	
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Pacifico', cursive;
+	color: #fff;
+	font-size: 22px;
+/* 	line-height: normal; */
+}
+
+a {
+	text-decoration: none;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+
+
+.wall {
+	background: url('../images/wall.jpg') no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+.board-wrapper {
+	margin-top: 50px;
+	width: 980px;
+	height: 526px;
+	box-shadow: 0 7px 15px 10px rgba(0, 0, 0, .5);
+
+}
+
+.board {
+	width: 1000px;
+    height: 535px;
+    background: url('../images/board.png');
+    background-size: cover;
+    position: relative;
+    margin: -2px 0 0 -10px;
+    padding: 25px 30px;
+    display: flex;
+	
+}
+
+.number-wrapper {
+	display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    align-content: flex-start;
+}
+
+.number {
+	opacity: .8;
+	height: 27px;
+    padding: 0 5px;
+}
+
+.owl-teacher {
+	width: 260px;
+	height: 260px;
+	position: absolute;
+	right: -280px;
+	bottom: 0;
+	background: url('../images/owl2.png');
+	z-index: 1;
+}
+
+
+.help {
+	color: black;
+	background: url('../images/note.jpg');
+	background-size:cover;
+	width: 350px;
+	position: absolute;
+	right: -35px;
+	bottom: 0;
+	padding: 5px;
+	border: 2px solid brown;
+	font-size: 18px;
+	line-height: 29px;
+	visibility: hidden;
+	animation: show 2s ease-in-out;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	font-size: 16px;
+	display: inline-block;
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+.end {
+	margin-left: 20px;
+}
+
+input {
+	font-size: 18px;
+	margin-left: 10px;
+	padding-left: 5px;
+	border-bottom: 2px solid #fff;
+	background: transparent;
+	color: #fff;
+	font-family: 'Pacifico', cursive;
+	width: 50%;
+}
+
+
+.btn {
+	text-align:center;
+	cursor: pointer;
+	font-family: 'Pacifico', cursive;
+	font-size: 22px;
+	background: transparent;
+	color: #fff;
+}
+
+.btn:hover {
+	transform: scale(1.1)
+}
+
+
+.desc {
+	width: 282px;
+	color: red;
+}
+
+@keyframes show {
+from {opacity: 0;}
+to {opacity: 1}
+}
+
+@keyframes hide {
+from {opacity: 1;}
+to {opacity: 0}
+}
