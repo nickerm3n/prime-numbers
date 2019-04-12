@@ -44,11 +44,13 @@ function primeNumber() {
 	arr.push(i)
 	}
 
-	for (var i = 0; i < arr.length; i++) {
+	for (let i = 0; i < arr.length; i++) {
 		var num = document.createElement('p');
 		num.appendChild(document.createTextNode(arr[i]));
 		num.classList.add('number');
-		wrapper.appendChild(num);
+		setTimeout(function () {
+			wrapper.appendChild(num)	
+		}, i * 2000);
 	}
 }
 

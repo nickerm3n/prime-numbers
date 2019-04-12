@@ -90,6 +90,7 @@ a {
 	opacity: .8;
 	height: 27px;
     padding: 0 5px;
+    animation: show 2s ease-in-out;
 }
 
 .owl-teacher {
@@ -166,6 +167,8 @@ input {
 	width: 282px;
 	color: red;
 }
+
+
 
 @keyframes show {
 from {opacity: 0;}
