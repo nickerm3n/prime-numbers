@@ -48,9 +48,10 @@ function primeNumber() {
 		var num = document.createElement('p');
 		num.appendChild(document.createTextNode(arr[i]));
 		num.classList.add('number');
-		setTimeout(function () {
-			wrapper.appendChild(num)	
-		}, i * 2000);
+		wrapper.appendChild(num)
+		// (function(index) {
+		// 	setTimeout(function() { wrapper.appendChild(num) }, i*1000);
+		// })(i);
 	}
 }
 
